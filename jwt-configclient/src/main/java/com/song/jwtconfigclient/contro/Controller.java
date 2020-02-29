@@ -18,4 +18,9 @@ public class Controller {
     public String test(){
         return name;
     }
+
+    @RequestMapping("/test")  //测试分支
+    public String test111(){
+        return name;
+    }
 }
