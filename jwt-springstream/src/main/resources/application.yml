@@ -1,0 +1,9 @@
+server:
+  port: 9000
+spring:
+  rabbitmq:
+    host: localhsot
+    port: 5679
+    virtual-host: /
+    username: guest
+    password: guest

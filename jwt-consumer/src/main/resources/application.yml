@@ -1,0 +1,18 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: jwt-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://e2:7000/eureka,http://e1:7001/eureka
+
+# JWT-PROVIDER\uFF1A
+  # ribbon:
+    # NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule  #\u7ED9\u6307\u5B9A\u7684\u670D\u52A1\u8BBE\u7F6E\u8D1F\u8F7D\u5747\u8861\u89C4\u5219\u4E3A\u968F\u673A
+
+    #\u5F00\u542Ffeign\u5BF9hystrix\u7684\u652F\u6301
+feign:
+  hystrix:
+    enabled: true

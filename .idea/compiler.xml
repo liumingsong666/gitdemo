@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jwt-configserver" />
+        <module name="jwt-eureka" />
+        <module name="jwt-springstream" />
+        <module name="jwt-provider" />
+        <module name="jwt-consumer" />
+        <module name="jwt-springevent" />
+        <module name="jwt-configclient" />
+        <module name="jwt-zuul" />
+        <module name="jwt-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="jwt" target="1.8" />
+      <module name="jwt-common" target="1.5" />
+      <module name="jwt-configclient" target="1.8" />
+      <module name="jwt-configserver" target="1.8" />
+      <module name="jwt-consumer" target="1.8" />
+      <module name="jwt-eureka" target="1.8" />
+      <module name="jwt-provider" target="1.8" />
+      <module name="jwt-springevent" target="1.8" />
+      <module name="jwt-springstream" target="1.8" />
+      <module name="jwt-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jwt" options="-parameters" />
+      <module name="jwt-configclient" options="-parameters" />
+      <module name="jwt-configserver" options="-parameters" />
+      <module name="jwt-consumer" options="-parameters" />
+      <module name="jwt-eureka" options="-parameters" />
+      <module name="jwt-provider" options="-parameters" />
+      <module name="jwt-springevent" options="-parameters" />
+      <module name="jwt-springstream" options="-parameters" />
+      <module name="jwt-zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

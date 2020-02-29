@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/jwt.iml" filepath="$PROJECT_DIR$/.idea/jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-common/jwt-common.iml" filepath="$PROJECT_DIR$/jwt-common/jwt-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-configclient/jwt-configclient.iml" filepath="$PROJECT_DIR$/jwt-configclient/jwt-configclient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-configserver/jwt-configserver.iml" filepath="$PROJECT_DIR$/jwt-configserver/jwt-configserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-consumer/jwt-consumer.iml" filepath="$PROJECT_DIR$/jwt-consumer/jwt-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-eureka/jwt-eureka.iml" filepath="$PROJECT_DIR$/jwt-eureka/jwt-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-provider/jwt-provider.iml" filepath="$PROJECT_DIR$/jwt-provider/jwt-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-springevent/jwt-springevent.iml" filepath="$PROJECT_DIR$/jwt-springevent/jwt-springevent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-springstream/jwt-springstream.iml" filepath="$PROJECT_DIR$/jwt-springstream/jwt-springstream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt-zuul/jwt-zuul.iml" filepath="$PROJECT_DIR$/jwt-zuul/jwt-zuul.iml" />
+    </modules>
+  </component>
+</project>

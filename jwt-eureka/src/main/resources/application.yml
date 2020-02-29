@@ -1,0 +1,11 @@
+server:
+  port: 7000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://e1:7000/eureka,http://e1:7001/eureka
+  instance:
+    hostname: e1
+spring:
+  application:
+    name: jwt-eureka-service

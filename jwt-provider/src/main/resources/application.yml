@@ -1,0 +1,9 @@
+server:
+  port: 8001
+#spring:
+#  application:
+#    name: jwt-provider
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://e2:7000/eureka,http://e1:7001/eureka
