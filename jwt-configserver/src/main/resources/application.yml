@@ -1,0 +1,18 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: jwt-configserver
+  cloud:
+    config:
+      server:
+        git:
+          # uri: https://gitee.com/lmsong/test  \u9ED8\u8BA4\u7684\u4ED3\u5E93\u5730\u5740
+         # repos:  //\u5206\u7EC4\uFF0C\u901A\u8FC7\u4E0D\u540C\u7684\u4ED3\u5E93\u52A0\u8F7D
+          #  jwtclient:
+           #   uri: https://gitee.com/lmsong/jwtclient
+
+          uri: :https://gitee.com/lmsong/{application}  #\u901A\u914D\u7B26\u6A21\u5F0F,\u914D\u7F6E\u591A\u4E2A\u4ED3\u5E93\uFF0C\u6BD4\u5982\u6211\u4EEC\u8BBF\u95EE\u662F user-dev.yml \u90A3\u4E48\u662F\u6309\u7167\u8DEF\u5F84\u5207\u5272\u89C4\u5219 user \u4F1A\u6210\u4E3A\u524D\u9762\u4ED3\u5E93\u5730\u5740\u4E2D{application}\u7684\u503C,\u7136\u540E\u518D\u53BB\u91CC\u9762\u627Euser-dev.yml
+        # uri: https://gitee.com/lmsong/test     #\u4E3A\u7F51\u9875\u5730\u5740\uFF0C\u4E0D\u662F\u4E0B\u8F7D\u5730\u5740
+          # search-paths:
+          #  -user   #\u4EE5 user-\u5F00\u5934\u7684\u6587\u4EF6\u8BF7\u6C42\u90FD\u4F1A\u88AB\u8F6C\u5230\u4ED3\u5E93\u4E2D\u7684 user \u76EE\u5F55\u4E2D,\u7136\u540E\u627E\u5BF9\u5E94\u7684\u6587\u4EF6,\u6BD4\u5982 user-pro.yml \u662F\u627E user \u76EE\u5F55\u4E0B\u7684 us

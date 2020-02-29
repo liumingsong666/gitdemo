@@ -1,0 +1,31 @@
+server:
+  port: 10001
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://e1:7000/eureka,http://e1:7001/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        # \u53EF\u4EE5\u901A\u8FC7\u8BBF\u95EE  host:port/actuator/routs\u8BBF\u95EE\u4EE3\u7406\u7684\u670D\u52A1
+spring:
+  application:
+    name: jwt-zuul
+  redis:
+    host: localhost
+    port: 6379
+    password:
+
+zuul:
+  routes:
+    # JWT-PROVIDER: /provider/**
+    provider:   #\u8FD9\u662F\u5206\u7EC4\uFF0C\u4E0D\u540C\u7684\u8DEF\u7531\u5206\u7EC4\uFF0C\u8FD9\u4E2A\u540D\u79F0\u4E3A\u552F\u4E00\u7684\u7EC4\u540D\uFF0C\u4E5F\u53EF\u4EE5\u6309\u4E0A\u9762\u7684\u89C4\u5219
+      path: /provider/**
+      serviceId: JWT-PROVIDER
+
+  ignored-services: '*'   #\u5FFD\u7565\u670D\u52A1\uFF0C\u5C06\u53EA\u663E\u793A\u914D\u7F6E\u6587\u4EF6\u91CC\u7684\uFF0C\u4E5F\u53EF\u4EE5\u5199\u67D0\u5355\u4E2A\u670D\u52A1
+  prefix: /song/

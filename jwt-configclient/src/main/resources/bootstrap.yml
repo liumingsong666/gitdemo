@@ -1,0 +1,14 @@
+server:
+  port: 9200
+spring:
+  application:
+    name: jwtclient
+  cloud:
+    config:
+      #配置configServer的地址，  最终访问的地址为： http://localhost:9100/jwtclient-pro.yml的地址，去git里面取出来
+      uri: http://localhost:9100/
+      profile: pro
+      label: master
+      discovery:
+        enabled: true   #开启服务发现,也就是会从注册中心找 config server 的地址
+        service-id: JWT-CONFIGSERVER   #既然要从注册中心找服务,那么服务的名字必须得知道,不然不知道找哪个地址
