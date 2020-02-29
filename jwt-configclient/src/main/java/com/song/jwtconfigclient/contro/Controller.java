@@ -23,4 +23,9 @@ public class Controller {
     public String test111(){
         return name;
     }
+
+    @RequestMapping("/test")  //测试分支
+    public String test111333(){
+        return name;
+    }
 }
